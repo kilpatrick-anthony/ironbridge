@@ -32,7 +32,7 @@ The photographs are illustrative. The source and licence record is below.
 
 | Placement | Creator | Licence and attribution | Modifications | Source |
 | --- | --- | --- | --- | --- |
-| Hero | abdo alshreef | Pexels License, attribution optional | Resized and converted to WebP. Responsive CSS crop and dark overlay. | [Engineer Inspecting Machinery in Industrial Setting](https://www.pexels.com/photo/engineer-inspecting-machinery-in-industrial-setting-37668423/) |
+| Hero | AI-generated illustration | Generated for this website | Converted to WebP. Responsive CSS crop and dark overlay. | OpenAI image generation |
 | Excavators | Janez Temlin | Pexels License, attribution optional | Centre-cropped to 3:2, resized to 960 × 640 and converted to WebP. | [Yellow Excavator at a Construction Site Outdoors](https://www.pexels.com/photo/yellow-excavator-at-a-construction-site-outdoors-37393681/) |
 | Telehandlers | Jongleur100 | Worldwide public-domain release by the creator, attribution optional | Cropped to 3:2, saturation reduced, resized and converted to WebP. | [JCB 532s.jpg and licence](https://commons.wikimedia.org/wiki/File:JCB_532s.jpg#Licensing) |
 | Wheel Loaders | R9 Media Photo Collective | Pexels License, attribution optional | Centre-cropped to 3:2, resized to 960 × 640 and converted to WebP. | [Bright Yellow Industrial Wheel Loader in Forest Area](https://www.pexels.com/photo/bright-yellow-industrial-wheel-loader-in-forest-area-33201219/) |

@@ -161,7 +161,7 @@ input, button { font: inherit; }
   inset-inline-start: auto;
   width: 78%;
   object-fit: cover;
-  object-position: 50% 40%;
+  object-position: right center;
 }
 .hero:has(.hero-photo)::after {
   content: "";
@@ -339,7 +339,7 @@ html[lang="th"] .equipment-link span { font-size: clamp(1.05rem, 2vw, 1.65rem); 
   .hero-inner { min-height: auto; padding-block: 3rem; }
   .hero:has(.hero-photo) .hero-inner { padding-top: clamp(12.5rem, 53vw, 25rem); }
   .hero-photo, .hero:has(.hero-photo)::after { height: min(67vw, 32rem); }
-  .hero-photo { width: 100%; object-position: 50% 55%; }
+  .hero-photo { width: 100%; }
   .hero:has(.hero-photo)::after {
     background: linear-gradient(0deg, var(--hero-scrim) 0%, rgb(23 23 20 / 98%) 14%, rgb(23 23 20 / 44%) 40%, transparent 70%);
   }
