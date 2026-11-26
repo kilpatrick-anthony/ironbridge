@@ -229,7 +229,7 @@ input, button { font: inherit; }
 .inspection .split:has(.feature-photo) .feature-copy {
   padding-inline: clamp(2rem, 6vw, 6rem) var(--gutter);
 }
-.inspection-photo { min-height: 25rem; object-position: 65% 40%; }
+.inspection-photo { min-height: 25rem; }
 
 .process-list {
   display: grid;
