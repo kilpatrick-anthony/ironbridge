@@ -163,6 +163,7 @@ input, button { font: inherit; }
   object-fit: cover;
   object-position: right top;
 }
+.hero-photo:lang(en) { object-position: right 65%; }
 .hero:has(.hero-photo)::after {
   content: "";
   z-index: -1;
