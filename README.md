@@ -15,7 +15,7 @@ The enquiry form validates and previews sample details in the browser. It has no
 
 ## Deploy from GitHub
 
-Import the repo from GitHub and use the repository root, build command `npm run build` and output directory `dist`. Use no framework preset in Cloudflare Pages or **Other** in Vercel. Review the preview deployment before connecting the production domain. Both pages use a robots meta tag to keep the review draft out of search results. Remove it on both pages once the site is approved for launch. The alternate-language links in each page head point to the two production URLs.
+Import the repo from GitHub. Vercel reads the build settings from `vercel.json`. For Cloudflare Pages, use the repository root, no framework preset, build command `npm run build`, and output directory `dist`. Review the preview deployment before connecting the production domain. Both pages use a robots meta tag to keep the review draft out of search results. Remove it on both pages once the site is approved for launch. The alternate-language links in each page head point to the two production URLs.
 
 [Cloudflare Pages Git integration](https://developers.cloudflare.com/pages/get-started/git-integration/) · [Vercel build settings](https://vercel.com/docs/builds/configure-a-build)
 
