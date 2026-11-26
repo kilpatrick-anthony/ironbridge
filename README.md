@@ -32,7 +32,7 @@ The photographs are illustrative. The source and licence record is below.
 
 | Placement | Creator | Licence and attribution | Modifications | Source |
 | --- | --- | --- | --- | --- |
-| English hero | Hoang NC | Pexels License, attribution optional | Cropped and converted to WebP. Responsive CSS crop and dark overlay. | [Engineer Supervises Robotic Machinery in Factory](https://www.pexels.com/photo/engineer-supervises-robotic-machinery-in-factory-36692505/) |
+| English hero | TECNIC Bioprocess Solutions | Unsplash License, attribution optional | Resized and converted to WebP. Responsive CSS crop and dark overlay. | [Man Works on a Computer in a Manufacturing Setting](https://unsplash.com/photos/man-works-on-a-computer-in-a-manufacturing-setting-RyMTGAYZpjY) |
 | Thai hero | Visen Group | Pexels License, attribution optional | Jumper logo removed. Resized and converted to WebP. Responsive CSS crop and dark overlay. | [Industrial Worker Operating Control Panel](https://www.pexels.com/photo/industrial-worker-operating-control-panel-37769416/) |
 | Excavators | Janez Temlin | Pexels License, attribution optional | Centre-cropped to 3:2, resized to 960 × 640 and converted to WebP. | [Yellow Excavator at a Construction Site Outdoors](https://www.pexels.com/photo/yellow-excavator-at-a-construction-site-outdoors-37393681/) |
 | Telehandlers | Jongleur100 | Worldwide public-domain release by the creator, attribution optional | Cropped to 3:2, saturation reduced, resized and converted to WebP. | [JCB 532s.jpg and licence](https://commons.wikimedia.org/wiki/File:JCB_532s.jpg#Licensing) |
