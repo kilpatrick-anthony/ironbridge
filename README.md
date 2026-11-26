@@ -24,7 +24,7 @@ Import the repo from GitHub. Vercel reads the build settings from `vercel.json`.
 - Edit the English copy in `site/index.html` and Thai copy in `site/th/index.html`. Each page has its own hero photo. Both pages share the same stylesheet, enquiry script and other photos. Keep the section IDs, form field names and mode identifiers consistent across both pages. Form feedback and category prefills are defined in each page’s HTML.
 - Both pages use the supplied dark logo at `site/assets/photos/iron-bridge-logo-dark.png` in the header and footer. To swap it, update the image path and dimensions in both locations. The colour variables are at the top of `site/assets/site.css`. Photos are in `site/assets/photos/`. Update each photo’s alternative text, CSS crop position and credits when replacing it. You can remove an image element to use the section’s typography-led layout.
 - Once an enquiry destination is approved, update `site/assets/enquiry.js` to deliver through a configured handler and update the form copy on both pages. Show confirmation only after successful delivery.
-- The footer’s social and messaging buttons are disabled placeholders. When the official URLs are available, replace each corresponding button with a link using the same `.social-link` class on both language pages.
+- The footer’s LinkedIn icon links to the company page. When the remaining official URLs are available, replace each corresponding placeholder button with a link using the same `.social-link` class on both language pages.
 
 ## Photography, fonts and icons
 
