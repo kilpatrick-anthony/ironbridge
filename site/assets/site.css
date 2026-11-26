@@ -161,7 +161,7 @@ input, button { font: inherit; }
   inset-inline-start: auto;
   width: 78%;
   object-fit: cover;
-  object-position: right center;
+  object-position: right top;
 }
 .hero:has(.hero-photo)::after {
   content: "";
@@ -346,7 +346,7 @@ html[lang="th"] .equipment-link span { font-size: clamp(1.05rem, 2vw, 1.65rem); 
   .hero h1 { font-size: clamp(4.4rem, 12.3vw, 5.4rem); }
   .inspection .split:has(.feature-photo) { grid-template-columns: minmax(0, 1fr); }
   .inspection .split:has(.feature-photo) .feature-copy { padding-inline: var(--gutter); }
-  .inspection-photo { min-height: 0; height: auto; aspect-ratio: 16 / 10; }
+  .inspection-photo { min-height: 0; height: auto; aspect-ratio: 5 / 4; }
 }
 
 @media (max-width: 47rem) {
