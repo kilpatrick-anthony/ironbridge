@@ -9,13 +9,13 @@ npm run build
 npm run preview
 ```
 
-Open port **4173** from the Codespaces **Ports** panel. Locally, open the [international English page](http://localhost:4173/) or the [Thai page](http://localhost:4173/th/). Use the flags in either header to switch languages. Run the build again after editing a source file, then refresh the browser. The build replaces the generated `dist/` directory.
+Open port **4173** from the Codespaces **Ports** panel and append `/inspections/` or `/th/inspections/` to the forwarded address. Locally, open [Machinery Inspections in English](http://localhost:4173/inspections/) or [Machinery Inspections in Thai](http://localhost:4173/th/inspections/). Use the flags in either header to switch languages. Run the build again after editing a source file, then refresh the browser. The build replaces the generated `dist/` directory.
 
-The enquiry form validates and previews sample details in the browser. It has no delivery address, endpoint or storage. Try both hero buttons, the four category links and the enquiry mode selector with sample details. Sourcing needs a machine type or model. Inspection accepts a listing link or the machine type or model.
+The enquiry form validates and previews sample details in the browser. It has no delivery address, endpoint or storage. Sourcing needs a machine type or model. Inspection accepts a listing link or the machine type or model. From the coverage map an inspection enquiry prefills the current machine location. Thailand’s sourcing action prefills the delivery location.
 
 ## Deploy from GitHub
 
-Import the repo from GitHub. Vercel reads the build settings from `vercel.json`. For Cloudflare Pages, use the repository root, no framework preset, build command `npm run build`, and output directory `dist`. Review the preview deployment before connecting the production domain. Both pages use a robots meta tag to keep the review draft out of search results. Remove it on both pages once the site is approved for launch. The alternate-language links in each page head point to the two production URLs.
+Import the repo from GitHub. Vercel reads the build settings from `vercel.json`. For Cloudflare Pages, use the repository root, no framework preset, build command `npm run build`, and output directory `dist`. Review the preview deployment before connecting the production domain. The review pages use a robots meta tag to keep them out of search results. Remove it once the site is approved for launch. The alternate-language links in each page head point to the corresponding production URLs.
 
 [Cloudflare Pages Git integration](https://developers.cloudflare.com/pages/get-started/git-integration/) · [Vercel build settings](https://vercel.com/docs/builds/configure-a-build)
 
@@ -25,6 +25,13 @@ Import the repo from GitHub. Vercel reads the build settings from `vercel.json`.
 - Both pages use the supplied dark logo at `site/assets/photos/iron-bridge-logo-dark.png` in the header and footer. To swap it, update the image path and dimensions in both locations. The colour variables are at the top of `site/assets/site.css`. Photos are in `site/assets/photos/`. Update each photo’s alternative text, CSS crop position and credits when replacing it. You can remove an image element to use the section’s typography-led layout.
 - Once an enquiry destination is approved, update `site/assets/enquiry.js` to deliver through a configured handler and update the form copy on both pages. Show confirmation only after successful delivery.
 - The footer’s LinkedIn icon links to the company page. When the remaining official URLs are available, replace each corresponding placeholder button with a link using the same `.social-link` class on both language pages.
+
+## Inspection coverage and example
+
+- Edit country coverage, regional entries, Iron Bridge locations and the example report link in [coverage.json](site/assets/maps/coverage.json). Coordinates use longitude, latitude in decimal degrees. The MEVAS coverage page was checked on **27 November 2026**. The map includes the published country list and additional countries named in the same page’s regional descriptions. Western North Africa and the GCC are represented as regions. [MEVAS coverage](https://mevas.net/where-mevas-inspects-machinery)
+- Thailand is a featured buyer and delivery market. If Justin confirms on-site inspection capability, add `"direct-inspection"` to the existing `TH` entry’s `capabilities` array. The same marker will offer both enquiry actions.
+- The basemap is a cropped and projected SVG of Natural Earth’s public-domain 1:110m Admin 0 Countries dataset, version 5.1.2. The map runs locally in the browser and uses approximate marker coordinates. [Natural Earth source dataset](https://github.com/nvkelso/natural-earth-vector/blob/v5.1.2/geojson/ne_110m_admin_0_countries.geojson) · [Natural Earth terms](https://www.naturalearthdata.com/about/terms-of-use/)
+- The example uses the existing illustrative dump truck photo and links to MEVAS’s public report library. The layout was informed by the Makana Volvo A40G listing. Confirm the partner wording and the sample-report link with Justin. If approved photos are supplied, add their `src` paths and `alt` in English and Thai to `example.media`, in full-machine, technician-at-work and component-close-up order. The gallery uses `example.partnerName` in its caption. [MEVAS sample reports](https://mevas.net/machinery-inspection-report-checklist/sample-reports-for-heavy-equipment-inspection) · [Makana listing](https://www.makana.com/en/product/dump-trucks/articulated-dump-trucks/adt-001-volvo-a40g-articulated-dump-truck)
 
 ## Photography, fonts and icons
 
@@ -37,7 +44,7 @@ The photographs are illustrative. The source and licence record is below.
 | Excavators | Janez Temlin | Pexels License, attribution optional | Centre-cropped to 3:2, resized to 960 × 640 and converted to WebP. | [Yellow Excavator at a Construction Site Outdoors](https://www.pexels.com/photo/yellow-excavator-at-a-construction-site-outdoors-37393681/) |
 | Telehandlers | Jongleur100 | Worldwide public-domain release by the creator, attribution optional | Cropped to 3:2, saturation reduced, resized and converted to WebP. | [JCB 532s.jpg and licence](https://commons.wikimedia.org/wiki/File:JCB_532s.jpg#Licensing) |
 | Wheel Loaders | R9 Media Photo Collective | Pexels License, attribution optional | Centre-cropped to 3:2, resized to 960 × 640 and converted to WebP. | [Bright Yellow Industrial Wheel Loader in Forest Area](https://www.pexels.com/photo/bright-yellow-industrial-wheel-loader-in-forest-area-33201219/) |
-| Dump Trucks | David McElwee | Pexels License, attribution optional | Centre-cropped to 3:2, resized to 960 × 640 and converted to WebP. | [A Dump Truck on a Construction Site](https://www.pexels.com/photo/a-dump-truck-on-a-construction-site-14475776/) |
+| Dump trucks and illustrative inspection example | David McElwee | Pexels License, attribution optional | Centre-cropped to 3:2, resized to 960 × 640 and converted to WebP. | [A Dump Truck on a Construction Site](https://www.pexels.com/photo/a-dump-truck-on-a-construction-site-14475776/) |
 | Inspection | Bulat843 | Pexels License, attribution optional | Cropped, resized and converted to WebP. | [Electrician Working with Multimeter in Workshop](https://www.pexels.com/photo/electrician-working-with-multimeter-in-workshop-33531830/) |
 | Shipping | Tom Fisk | Pexels License, attribution optional | Saturation reduced, resized and converted to WebP. Responsive CSS crop. | [Drone Shot of a Docked Cargo Ship at a Port](https://www.pexels.com/photo/drone-shot-of-a-docked-cargo-ship-at-a-port-3856440/) |
 

@@ -7,6 +7,8 @@ const previewDetails = document.querySelector('#preview-details');
 const intent = form.elements.namedItem('intent');
 const machine = form.elements.namedItem('machine');
 const listing = form.elements.namedItem('listing');
+const machineLocation = form.elements.namedItem('machineLocation');
+const destination = form.elements.namedItem('destination');
 const email = form.elements.namedItem('email');
 const phone = form.elements.namedItem('phone');
 const machineLabel = machine.closest('label');
@@ -106,6 +108,17 @@ document.querySelectorAll('[data-enquiry]').forEach((link) => {
     }
   });
 });
+
+const enquiryParams = new URLSearchParams(window.location.search);
+const requestedIntent = enquiryParams.get('intent');
+if (requestedIntent === 'inspection' || requestedIntent === 'source') {
+  intent.value = requestedIntent;
+  const locationField = requestedIntent === 'inspection' ? machineLocation : destination;
+  const location = enquiryParams.get(locationField.name)?.trim();
+  if (location && !locationField.value) {
+    locationField.value = location.slice(0, locationField.maxLength);
+  }
+}
 
 updateEnquiryMode();
 form.noValidate = true;

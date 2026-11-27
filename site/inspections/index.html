@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Arrange independent pre-purchase machinery inspections and explore coverage through our partner network.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#1b1b18">
+  <title>Machinery Inspections | Iron Bridge Machinery</title>
+  <link rel="alternate" hreflang="en" href="https://ironbridgemachinery.com/inspections/">
+  <link rel="alternate" hreflang="th" href="https://ironbridgemachinery.com/th/inspections/">
+  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="/assets/maps/inspections.css">
+  <script src="/assets/maps/coverage.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header dark">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="/" aria-label="Iron Bridge International home">
+        <img src="/assets/photos/iron-bridge-logo-dark.png" alt="" width="1000" height="427">
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-link" href="/#machinery">Machinery</a>
+        <a class="nav-link" href="/#process">How it works</a>
+        <a class="nav-link" href="/inspections/" aria-current="page">Inspections</a>
+        <a class="nav-link" href="/#shipping">Shipping</a>
+        <a class="button button-outline" href="/#enquiry">Enquire</a>
+      </nav>
+      <nav class="language-switcher" aria-label="Language">
+        <a href="/inspections/" hreflang="en" lang="en" aria-current="page">
+          <img src="/assets/flags/gb.svg" alt="" width="22" height="14"> English
+        </a>
+        <a href="/th/inspections/" hreflang="th" lang="th">
+          <img src="/assets/flags/th.svg" alt="" width="22" height="14"> ภาษาไทย
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="inspection-page" tabindex="-1">
+    <section class="inspection-intro" aria-labelledby="inspection-page-title">
+      <div class="wrap">
+        <p class="eyebrow">Machinery Inspections</p>
+        <h1 id="inspection-page-title">Know the machine before you buy.</h1>
+        <div class="inspection-intro-actions">
+          <p class="inspection-lede">Send us the listing or tell us the make, model and current location. We’ll confirm inspection availability, scope and fees for your enquiry.</p>
+          <a class="button button-ink" href="/?intent=inspection#enquiry">Request an inspection</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="coverage dark" id="coverage" aria-labelledby="coverage-title">
+      <div class="wrap">
+        <div class="coverage-heading">
+          <h2 id="coverage-title">Inspection coverage through our partner network</h2>
+          <p>Choose where the machine is now to check inspection options, or select Thailand for sourcing and delivery enquiries.</p>
+        </div>
+        <div class="coverage-dashboard" data-coverage data-home="/">
+          <div class="coverage-filters" id="coverage-filters" hidden>
+            <label for="location-search">Find a country or region</label>
+            <input id="location-search" type="search" placeholder="e.g. Germany or Thailand" autocomplete="off" aria-controls="coverage-list">
+            <label for="region-filter">Region</label>
+            <div class="region-select">
+              <select id="region-filter" aria-controls="coverage-list"><option value="">World view</option></select>
+            </div>
+          </div>
+          <div class="coverage-directory">
+            <p id="locations-label">Locations <span id="location-count" role="status"></span></p>
+            <p id="location-keyboard-help" class="coverage-visually-hidden"></p>
+            <ul id="coverage-list" aria-labelledby="locations-label"><li>Loading locations…</li></ul>
+            <noscript><p>Enable JavaScript to search coverage and select map locations.</p></noscript>
+          </div>
+          <div class="coverage-map">
+            <div class="coverage-viewport" id="coverage-viewport" role="group" aria-label="World map of inspection and delivery enquiries">
+              <img id="world-map" class="world-map" src="/assets/maps/world.svg" alt="" width="1080" height="480" decoding="async" draggable="false">
+              <div class="coverage-markers" id="coverage-markers"></div>
+              <div class="coverage-zoom" id="coverage-zoom" hidden>
+                <button type="button" id="zoom-in" aria-label="Zoom in" title="Zoom in">+</button>
+                <button type="button" id="zoom-out" aria-label="Zoom out" title="Zoom out">−</button>
+                <button type="button" id="reset-map" aria-label="Reset map" title="Reset map">Reset map</button>
+              </div>
+            </div>
+            <div class="coverage-map-meta">
+              <ul class="coverage-legend">
+                <li><span class="coverage-symbol partner" aria-hidden="true"></span>Partner inspections</li>
+                <li><span class="coverage-symbol buyer" aria-hidden="true"></span>Buyer market and delivery enquiries</li>
+              </ul>
+              <a href="https://www.naturalearthdata.com/about/terms-of-use/">Made with Natural Earth</a>
+            </div>
+          </div>
+          <div class="coverage-selection">
+            <div id="location-summary" aria-live="polite">
+              <p id="location-kind" class="location-kind"><span><span class="coverage-symbol buyer" aria-hidden="true"></span>Buyer market and delivery enquiries</span></p>
+              <h3 id="location-name">Thailand</h3>
+              <p id="location-description">Buying for Thailand? Tell us what machine you need. We can help source it, arrange an inspection where the machine is located and coordinate shipping.</p>
+            </div>
+            <div class="location-actions" id="location-actions">
+              <a class="button button-primary" href="/?intent=source&amp;destination=Thailand#enquiry">Request a machine</a>
+            </div>
+          </div>
+        </div>
+        <p class="coverage-note">Inspection availability depends on the machine and its location. Markers show approximate locations.</p>
+      </div>
+    </section>
+
+    <section class="section inspection-guide" aria-label="Machinery Inspections">
+      <div class="wrap inspection-guide-grid">
+        <div><h2>What can be checked</h2><p>An inspection can cover visible condition, engine, hydraulics, tyres or undercarriage, and functional checks. Ask about diagnostics, oil sampling and other specialist tests where applicable.</p></div>
+        <div><h2>What you receive</h2><p>A condition report and photo evidence, with video or diagnostic data where included in the agreed scope.</p></div>
+        <div><h2>How to book</h2><p>Send the listing or machine details, agree the scope and review the findings before deciding whether to buy.</p><a class="text-link" href="/?intent=inspection#enquiry">Request an inspection</a></div>
+      </div>
+    </section>
+
+    <section class="section inspection-example" aria-labelledby="example-title">
+      <div class="wrap">
+        <h2 id="example-title">See an example inspection</h2>
+        <div class="example-grid">
+          <figure id="example-illustration">
+            <img src="/assets/photos/dump-truck.webp" alt="Rigid dump truck at a quarry" width="960" height="640" loading="lazy" decoding="async">
+          </figure>
+          <div class="example-details">
+            <h3>Rigid quarry truck</h3>
+            <p>An example of how machine details and condition findings can be presented in a report.</p>
+            <dl class="machine-facts">
+              <div><dt>Machine type</dt><dd>Rigid dump truck</dd></div>
+              <div><dt>Machine details recorded</dt><dd>Make, model, serial number and displayed hours</dd></div>
+            </dl>
+            <dl class="condition-list">
+              <div><dt>Engine and drivetrain</dt><dd>Running condition, visible leaks and functional observations.</dd></div>
+              <div><dt>Chassis, body and tyres</dt><dd>Visible damage, wear and tyre condition.</dd></div>
+              <div><dt>Hydraulics and controls</dt><dd>Condition and operation of the hoist and controls.</dd></div>
+            </dl>
+            <a class="button button-ink" id="sample-report" data-label="View sample reports" hidden>View sample reports</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer dark">
+    <div class="wrap">
+      <div class="footer-inner">
+        <img class="footer-logo" src="/assets/photos/iron-bridge-logo-dark.png" alt="Iron Bridge International Limited" width="1000" height="427">
+        <div class="footer-socials" role="group" aria-label="Social and messaging">
+          <a class="social-link" href="https://www.linkedin.com/company/ironbridgemachinery" aria-label="LinkedIn" title="LinkedIn"><img src="/assets/social/linkedin.svg" alt="" width="18" height="18"></a>
+          <button class="social-link" type="button" aria-label="Facebook" title="Facebook" disabled><img src="/assets/social/facebook.svg" alt="" width="18" height="18"></button>
+          <button class="social-link" type="button" aria-label="Instagram" title="Instagram" disabled><img src="/assets/social/instagram.svg" alt="" width="18" height="18"></button>
+          <button class="social-link" type="button" aria-label="WhatsApp" title="WhatsApp" disabled><img src="/assets/social/whatsapp.svg" alt="" width="18" height="18"></button>
+          <button class="social-link" type="button" aria-label="LINE" title="LINE" disabled><img src="/assets/social/line.svg" alt="" width="18" height="18"></button>
+          <button class="social-link" type="button" aria-label="TikTok" title="TikTok" disabled><img src="/assets/social/tiktok.svg" alt="" width="18" height="18"></button>
+        </div>
+        <a href="#main">Back to top</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

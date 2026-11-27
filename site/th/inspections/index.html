@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="จัดการตรวจสภาพเครื่องจักรก่อนซื้อโดยผู้ตรวจอิสระและดูพื้นที่ให้บริการของเครือข่ายพันธมิตร">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#1b1b18">
+  <title>การตรวจสภาพเครื่องจักร | Iron Bridge Machinery</title>
+  <link rel="alternate" hreflang="en" href="https://ironbridgemachinery.com/inspections/">
+  <link rel="alternate" hreflang="th" href="https://ironbridgemachinery.com/th/inspections/">
+  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="/assets/maps/inspections.css">
+  <script src="/assets/maps/coverage.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+  <header class="site-header dark">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="/th/" aria-label="หน้าหลัก Iron Bridge International">
+        <img src="/assets/photos/iron-bridge-logo-dark.png" alt="" width="1000" height="427">
+      </a>
+      <nav class="site-nav" aria-label="เมนูหลัก">
+        <a class="nav-link" href="/th/#machinery">เครื่องจักร</a>
+        <a class="nav-link" href="/th/#process">ขั้นตอน</a>
+        <a class="nav-link" href="/th/inspections/" aria-current="page">ตรวจสภาพ</a>
+        <a class="nav-link" href="/th/#shipping">การจัดส่ง</a>
+        <a class="button button-outline" href="/th/#enquiry">สอบถาม</a>
+      </nav>
+      <nav class="language-switcher" aria-label="เลือกภาษา">
+        <a href="/inspections/" hreflang="en" lang="en">
+          <img src="/assets/flags/gb.svg" alt="" width="22" height="14"> English
+        </a>
+        <a href="/th/inspections/" hreflang="th" lang="th" aria-current="page">
+          <img src="/assets/flags/th.svg" alt="" width="22" height="14"> ภาษาไทย
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="inspection-page" tabindex="-1">
+    <section class="inspection-intro" aria-labelledby="inspection-page-title">
+      <div class="wrap">
+        <p class="eyebrow">การตรวจสภาพเครื่องจักร</p>
+        <h1 id="inspection-page-title">รู้สภาพเครื่องจักรก่อนตัดสินใจซื้อ</h1>
+        <div class="inspection-intro-actions">
+          <p class="inspection-lede">ส่งลิงก์ประกาศขายหรือแจ้งยี่ห้อ รุ่น และสถานที่ตั้งปัจจุบันของเครื่องจักร เราจะยืนยันว่าจัดการตรวจได้หรือไม่ พร้อมแจ้งขอบเขตและค่าใช้จ่ายให้คุณทราบ</p>
+          <a class="button button-ink" href="/th/?intent=inspection#enquiry">ขอตรวจสภาพเครื่องจักร</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="coverage dark" id="coverage" aria-labelledby="coverage-title">
+      <div class="wrap">
+        <div class="coverage-heading">
+          <h2 id="coverage-title">พื้นที่ตรวจสภาพผ่านเครือข่ายพันธมิตร</h2>
+          <p>เลือกประเทศที่เครื่องจักรตั้งอยู่เพื่อสอบถามการตรวจสภาพ หรือเลือกประเทศไทยเพื่อสอบถามการจัดหาและจัดส่ง</p>
+        </div>
+        <div class="coverage-dashboard" data-coverage data-home="/th/">
+          <div class="coverage-filters" id="coverage-filters" hidden>
+            <label for="location-search">ค้นหาประเทศหรือภูมิภาค</label>
+            <input id="location-search" type="search" placeholder="เช่น เยอรมนี หรือ ไทย" autocomplete="off" aria-controls="coverage-list">
+            <label for="region-filter">ภูมิภาค</label>
+            <div class="region-select">
+              <select id="region-filter" aria-controls="coverage-list"><option value="">แผนที่โลก</option></select>
+            </div>
+          </div>
+          <div class="coverage-directory">
+            <p id="locations-label">รายชื่อพื้นที่ <span id="location-count" role="status"></span></p>
+            <p id="location-keyboard-help" class="coverage-visually-hidden"></p>
+            <ul id="coverage-list" aria-labelledby="locations-label"><li>กำลังโหลดรายชื่อพื้นที่…</li></ul>
+            <noscript><p>เปิดใช้งาน JavaScript เพื่อค้นหาและเลือกพื้นที่บนแผนที่</p></noscript>
+          </div>
+          <div class="coverage-map">
+            <div class="coverage-viewport" id="coverage-viewport" role="group" aria-label="แผนที่โลกแสดงพื้นที่ตรวจสภาพและปลายทางจัดส่ง">
+              <img id="world-map" class="world-map" src="/assets/maps/world.svg" alt="" width="1080" height="480" decoding="async" draggable="false">
+              <div class="coverage-markers" id="coverage-markers"></div>
+              <div class="coverage-zoom" id="coverage-zoom" hidden>
+                <button type="button" id="zoom-in" aria-label="ขยายแผนที่" title="ขยายแผนที่">+</button>
+                <button type="button" id="zoom-out" aria-label="ย่อแผนที่" title="ย่อแผนที่">−</button>
+                <button type="button" id="reset-map" aria-label="รีเซ็ตแผนที่" title="รีเซ็ตแผนที่">รีเซ็ตแผนที่</button>
+              </div>
+            </div>
+            <div class="coverage-map-meta">
+              <ul class="coverage-legend">
+                <li><span class="coverage-symbol partner" aria-hidden="true"></span>พื้นที่ตรวจสภาพผ่านพันธมิตร</li>
+                <li><span class="coverage-symbol buyer" aria-hidden="true"></span>ตลาดผู้ซื้อและพื้นที่รับจัดส่ง</li>
+              </ul>
+              <a href="https://www.naturalearthdata.com/about/terms-of-use/">ข้อมูลแผนที่จาก Natural Earth</a>
+            </div>
+          </div>
+          <div class="coverage-selection">
+            <div id="location-summary" aria-live="polite">
+              <p id="location-kind" class="location-kind"><span><span class="coverage-symbol buyer" aria-hidden="true"></span>ตลาดผู้ซื้อและพื้นที่รับจัดส่ง</span></p>
+              <h3 id="location-name">ไทย</h3>
+              <p id="location-description">ต้องการซื้อเครื่องจักรเพื่อใช้ในประเทศไทย? แจ้งประเภทเครื่องจักรที่ต้องการ เราช่วยจัดหา ประสานการตรวจสภาพ ณ ที่ตั้งของเครื่อง และจัดการขนส่งได้</p>
+            </div>
+            <div class="location-actions" id="location-actions">
+              <a class="button button-primary" href="/th/?intent=source&amp;destination=%E0%B9%84%E0%B8%97%E0%B8%A2#enquiry">แจ้งเครื่องจักรที่ต้องการ</a>
+            </div>
+          </div>
+        </div>
+        <p class="coverage-note">การตรวจสภาพขึ้นอยู่กับเครื่องจักรและสถานที่ตั้ง หมุดแสดงตำแหน่งโดยประมาณ</p>
+      </div>
+    </section>
+
+    <section class="section inspection-guide" aria-label="การตรวจสภาพเครื่องจักร">
+      <div class="wrap inspection-guide-grid">
+        <div><h2>ตรวจอะไรได้บ้าง</h2><p>ตรวจสภาพที่มองเห็นได้ เครื่องยนต์ ระบบไฮดรอลิก ยางหรือช่วงล่าง และทดสอบการทำงาน สอบถามเรื่องการวินิจฉัย การเก็บตัวอย่างน้ำมัน และการทดสอบเฉพาะทางเพิ่มเติมได้ตามความเหมาะสม</p></div>
+        <div><h2>สิ่งที่คุณจะได้รับ</h2><p>รายงานสภาพเครื่องจักรและภาพถ่ายประกอบ พร้อมวิดีโอหรือข้อมูลการวินิจฉัยตามขอบเขตที่ตกลงกัน</p></div>
+        <div><h2>วิธีขอตรวจสภาพ</h2><p>ส่งลิงก์ประกาศขายหรือรายละเอียดเครื่องจักร ตกลงขอบเขตการตรวจ แล้วพิจารณาผลก่อนตัดสินใจซื้อ</p><a class="text-link" href="/th/?intent=inspection#enquiry">ขอตรวจสภาพเครื่องจักร</a></div>
+      </div>
+    </section>
+
+    <section class="section inspection-example" aria-labelledby="example-title">
+      <div class="wrap">
+        <h2 id="example-title">ดูตัวอย่างการตรวจสภาพ</h2>
+        <div class="example-grid">
+          <figure id="example-illustration">
+            <img src="/assets/photos/dump-truck.webp" alt="รถดัมพ์โครงแข็งในเหมืองหิน" width="960" height="640" loading="lazy" decoding="async">
+          </figure>
+          <div class="example-details">
+            <h3>รถดัมพ์โครงแข็งสำหรับเหมืองหิน</h3>
+            <p>ตัวอย่างการแสดงรายละเอียดเครื่องจักรและผลการตรวจสภาพในรายงาน</p>
+            <dl class="machine-facts">
+              <div><dt>ประเภทเครื่องจักร</dt><dd>รถดัมพ์โครงแข็ง</dd></div>
+              <div><dt>ข้อมูลเครื่องจักรที่บันทึก</dt><dd>ยี่ห้อ รุ่น หมายเลขเครื่อง และชั่วโมงการทำงานที่แสดง</dd></div>
+            </dl>
+            <dl class="condition-list">
+              <div><dt>เครื่องยนต์และระบบส่งกำลัง</dt><dd>สภาพขณะเดินเครื่อง รอยรั่วที่มองเห็น และผลการทดสอบการทำงาน</dd></div>
+              <div><dt>แชสซี ตัวถัง และยาง</dt><dd>ความเสียหายที่มองเห็น การสึกหรอ และสภาพยาง</dd></div>
+              <div><dt>ระบบไฮดรอลิกและชุดควบคุม</dt><dd>สภาพและการทำงานของระบบยกกระบะและชุดควบคุม</dd></div>
+            </dl>
+            <a class="button button-ink" id="sample-report" data-label="ดูรายงานตัวอย่าง" hidden>ดูรายงานตัวอย่าง</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer dark">
+    <div class="wrap">
+      <div class="footer-inner">
+        <img class="footer-logo" src="/assets/photos/iron-bridge-logo-dark.png" alt="Iron Bridge International Limited" width="1000" height="427" lang="en">
+        <div class="footer-socials" role="group" aria-label="โซเชียลมีเดียและแชต">
+          <a class="social-link" href="https://www.linkedin.com/company/ironbridgemachinery" lang="en" aria-label="LinkedIn" title="LinkedIn"><img src="/assets/social/linkedin.svg" alt="" width="18" height="18"></a>
+          <button class="social-link" type="button" lang="en" aria-label="Facebook" title="Facebook" disabled><img src="/assets/social/facebook.svg" alt="" width="18" height="18"></button>
+          <button class="social-link" type="button" lang="en" aria-label="Instagram" title="Instagram" disabled><img src="/assets/social/instagram.svg" alt="" width="18" height="18"></button>
+          <button class="social-link" type="button" lang="en" aria-label="WhatsApp" title="WhatsApp" disabled><img src="/assets/social/whatsapp.svg" alt="" width="18" height="18"></button>
+          <button class="social-link" type="button" lang="en" aria-label="LINE" title="LINE" disabled><img src="/assets/social/line.svg" alt="" width="18" height="18"></button>
+          <button class="social-link" type="button" lang="en" aria-label="TikTok" title="TikTok" disabled><img src="/assets/social/tiktok.svg" alt="" width="18" height="18"></button>
+        </div>
+        <a href="#main">กลับขึ้นด้านบน</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

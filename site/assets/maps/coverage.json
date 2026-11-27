@@ -1,0 +1,62 @@
+{
+  "source": {
+    "name": "MEVAS",
+    "url": "https://mevas.net/where-mevas-inspects-machinery",
+    "checked": "2026-11-27"
+  },
+  "regions": {
+    "americas": {"en": "Americas", "th": "ทวีปอเมริกา"},
+    "europe": {"en": "Europe", "th": "ยุโรป"},
+    "africa": {"en": "Africa", "th": "แอฟริกา"},
+    "middle-east": {"en": "Middle East", "th": "ตะวันออกกลาง"},
+    "asia-pacific": {"en": "Asia-Pacific", "th": "เอเชียและแปซิฟิก"}
+  },
+  "inspectionCountries": {
+    "americas": {
+      "US": [-99, 39], "MX": [-102, 24], "CL": [-71, -33]
+    },
+    "europe": {
+      "AT": [14.1, 47.5], "BE": [4.6, 50.7], "BG": [25.1, 42.7],
+      "CH": [8.3, 46.8], "CZ": [15.3, 49.8], "DE": [10.5, 51.2],
+      "DK": [9.5, 56.1], "EE": [25.4, 58.7], "ES": [-3.7, 40.4],
+      "FR": [2.5, 46.6], "GB": [-2, 54.5], "GR": [22, 39.3],
+      "HR": [16.4, 45.1], "HU": [19.4, 47.2], "IE": [-8.2, 53.3],
+      "IT": [12.5, 42.5], "LT": [24, 55.3], "LV": [25, 56.9],
+      "NL": [5.5, 52.2], "PL": [19.4, 52], "PT": [-8, 39.6],
+      "RO": [25, 45.8], "RU": [53, 56], "SE": [15.5, 61.5],
+      "SI": [14.9, 46.1], "SK": [19.5, 48.7], "TR": [35, 39]
+    },
+    "africa": {
+      "EG": [29.9, 26.7], "GH": [-1.2, 7.9], "MA": [-6.5, 31.9],
+      "NG": [8.7, 9.1], "ZA": [25, -29]
+    },
+    "middle-east": {
+      "AE": [54.2, 24.2], "SA": [45, 24.3]
+    },
+    "asia-pacific": {
+      "AU": [134, -25], "CN": [104, 35], "ID": [106.8, -6.2], "IN": [79.5, 22.2]
+    }
+  },
+  "inspectionRegions": [
+    {"id": "northwest-africa", "label": {"en": "Western North Africa", "th": "แอฟริกาเหนือตะวันตก"}, "region": "africa", "coordinates": [-12, 25]},
+    {"id": "gcc", "label": {"en": "Gulf Cooperation Council (GCC)", "th": "กลุ่มประเทศความร่วมมืออ่าวอาหรับ (GCC)"}, "region": "middle-east", "coordinates": [53, 29]}
+  ],
+  "ironBridgeLocations": [
+    {"id": "TH", "region": "asia-pacific", "coordinates": [101, 15.5], "capabilities": ["buyer"]}
+  ],
+  "featuredLocation": "TH",
+  "searchAliases": {
+    "CZ": ["Czech Republic"],
+    "EE": ["Baltics"], "LT": ["Baltics"], "LV": ["Baltics"],
+    "GB": ["UK", "Great Britain", "Britain", "England", "Scotland", "Wales", "Northern Ireland"],
+    "NL": ["Holland"],
+    "TR": ["Turkey", "Türkiye"],
+    "US": ["US", "USA", "United States of America"],
+    "AE": ["UAE", "U.A.E.", "Emirates"]
+  },
+  "example": {
+    "partnerName": "MEVAS",
+    "reportUrl": "https://mevas.net/machinery-inspection-report-checklist/sample-reports-for-heavy-equipment-inspection",
+    "media": []
+  }
+}
