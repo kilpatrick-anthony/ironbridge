@@ -104,6 +104,7 @@ input, button { font: inherit; }
   height: auto;
 }
 .site-nav { display: flex; gap: clamp(1rem, 3vw, 2.5rem); align-items: center; justify-self: end; }
+.site-nav-links { display: flex; align-items: center; gap: inherit; }
 .nav-link { font-size: .94rem; font-weight: 600; text-decoration: none; }
 .nav-link:hover, .text-link:hover { text-decoration: underline; text-underline-offset: .25em; }
 
@@ -361,22 +362,48 @@ html[lang="th"] .equipment-link span { font-size: clamp(1.05rem, 2vw, 1.65rem); 
 @media (max-width: 35rem) {
   .header-inner { min-height: auto; padding-block: .95rem .7rem; }
   .wordmark img { width: clamp(8.5rem, 42vw, 10rem); }
-  .site-nav { width: 100%; justify-content: space-between; flex-wrap: wrap; gap: .25rem .45rem; }
+  .site-nav {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "toggle enquire" "links links";
+    gap: 0 .75rem;
+    width: 100%;
+  }
+  .nav-toggle {
+    grid-area: toggle;
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    gap: .65rem;
+    min-height: 2.75rem;
+    padding-inline: .8rem;
+    border: 1px solid var(--dark-line);
+    background: transparent;
+    color: var(--white);
+    font-size: .94rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .nav-toggle:hover, .nav-toggle[aria-expanded="true"] { border-color: var(--gold); }
+  .nav-toggle-icon { width: 1rem; height: 2px; background: currentColor; box-shadow: 0 -.29rem, 0 .29rem; }
+  .site-nav-links {
+    grid-area: links;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .25rem .65rem;
+    margin-top: .55rem;
+    padding-top: .4rem;
+    border-top: 1px solid var(--dark-line);
+  }
   .language-switcher a { flex-direction: column; justify-content: center; gap: .2rem; padding: .25rem .35rem; font-size: .72rem; line-height: 1.15; }
-  .nav-link { min-height: 2.75rem; display: flex; align-items: center; font-size: .83rem; }
-  .site-header .button { padding-inline: .45rem; font-size: .8rem; }
+  .nav-link { min-height: 2.75rem; display: flex; align-items: center; padding-inline: .4rem; }
+  .site-nav > .button { grid-area: enquire; min-height: 2.75rem; padding-inline: .85rem; font-size: .94rem; white-space: nowrap; }
   html[lang="en"] .hero h1 { font-size: clamp(3rem, 15vw, 4.4rem); }
-  html[lang="th"] .site-nav { white-space: normal; }
   html[lang="th"] .hero h1 { font-size: clamp(2.25rem, 10vw, 2.65rem); }
   .hero-actions { gap: .55rem; }
   .hero-actions .button { padding-inline: .8rem; font-size: .92rem; }
   .fields-grid { grid-template-columns: minmax(0, 1fr); }
   .process-list li, .process-list li + li { padding-right: .5rem; }
-}
-
-@media (max-width: 24rem) {
-  .site-nav { flex-wrap: wrap; justify-content: flex-start; column-gap: .55rem; }
-  .site-nav .button { margin-inline-start: auto; }
 }
 
 @media (max-width: 21.5rem) {

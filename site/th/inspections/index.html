@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/assets/maps/inspections.css">
   <script src="/assets/maps/coverage.js" type="module"></script>
   <script src="/assets/inspection-gallery.js" defer></script>
+  <script src="/assets/navigation.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
@@ -22,10 +23,15 @@
         <img src="/assets/photos/iron-bridge-logo-dark.png" alt="" width="1000" height="427">
       </a>
       <nav class="site-nav" aria-label="เมนูหลัก">
-        <a class="nav-link" href="/th/#machinery">เครื่องจักร</a>
-        <a class="nav-link" href="/th/#process">ขั้นตอน</a>
-        <a class="nav-link" href="/th/inspections/" aria-current="page">ตรวจสภาพ</a>
-        <a class="nav-link" href="/th/#shipping">การจัดส่ง</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-links" hidden>
+          <span class="nav-toggle-icon" aria-hidden="true"></span>เมนู
+        </button>
+        <div class="site-nav-links" id="site-nav-links">
+          <a class="nav-link" href="/th/#machinery">เครื่องจักร</a>
+          <a class="nav-link" href="/th/#process">ขั้นตอน</a>
+          <a class="nav-link" href="/th/inspections/" aria-current="page">ตรวจสภาพ</a>
+          <a class="nav-link" href="/th/#shipping">การจัดส่ง</a>
+        </div>
         <a class="button button-outline" href="/th/#enquiry">สอบถาม</a>
       </nav>
       <nav class="language-switcher" aria-label="เลือกภาษา">
