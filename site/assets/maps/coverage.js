@@ -24,8 +24,7 @@ const copy = {
     sourceAction: 'Request a machine',
     inspectionAction: 'Request an inspection',
     cluster: (count) => 'Show ' + count + ' nearby locations',
-    close: 'Close nearby locations',
-    exampleCaption: (name) => 'Example inspection by ' + name
+    close: 'Close nearby locations'
   },
   th: {
     partner: 'พื้นที่ตรวจสภาพผ่านพันธมิตร',
@@ -43,34 +42,9 @@ const copy = {
     sourceAction: 'แจ้งเครื่องจักรที่ต้องการ',
     inspectionAction: 'ขอตรวจสภาพเครื่องจักร',
     cluster: (count) => 'แสดงพื้นที่ใกล้กัน ' + count + ' แห่ง',
-    close: 'ปิดรายชื่อพื้นที่ใกล้กัน',
-    exampleCaption: (name) => 'ตัวอย่างการตรวจสภาพโดย ' + name
+    close: 'ปิดรายชื่อพื้นที่ใกล้กัน'
   }
 }[lang];
-
-function renderExample({partnerName, reportUrl, media}) {
-  const link = byId('sample-report');
-  if (reportUrl) {
-    link.href = reportUrl;
-    link.textContent = [link.dataset.label, partnerName].filter(Boolean).join(' · ');
-    link.hidden = false;
-  }
-  if (!media.length) return;
-
-  const figure = byId('example-illustration');
-  const gallery = document.createElement('div');
-  gallery.className = 'example-gallery';
-  for (const {src, alt} of media) {
-    const image = new Image();
-    image.src = src;
-    image.alt = local(alt);
-    image.loading = 'lazy';
-    gallery.append(image);
-  }
-  const caption = document.createElement('figcaption');
-  caption.textContent = copy.exampleCaption(partnerName);
-  figure.replaceChildren(gallery, caption);
-}
 
 function locationsFrom(data) {
   const entries = new Map();
@@ -470,7 +444,6 @@ const coverageData = await fetch(new URL('coverage.json', import.meta.url)).then
 }).catch(() => null);
 
 if (coverageData) {
-  renderExample(coverageData.example);
   initCoverage(coverageData);
 } else {
   byId('coverage-list').firstElementChild.textContent = copy.unavailable;

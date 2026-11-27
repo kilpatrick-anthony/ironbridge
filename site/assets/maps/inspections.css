@@ -156,7 +156,7 @@
 .coverage-directory { grid-area: directory; padding: 0 1rem .9rem; }
 #locations-label { margin-bottom: .25rem; font-size: .875rem; font-weight: 700; }
 #location-count { margin-inline-start: .25rem; color: var(--light-text); font-weight: 400; }
-.coverage-visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 #coverage-list {
   min-height: 3rem;
   height: 8.5rem;
@@ -199,23 +199,26 @@
 .inspection-guide-grid > div { padding-top: .85rem; border-top: 2px solid var(--gold); }
 .inspection-guide-grid h2 { font-size: clamp(1.75rem, 2.75vw, 2.8rem); text-transform: none; }
 .inspection-guide-grid h2:lang(th) { font-size: clamp(1.35rem, 2.35vw, 2.15rem); }
-.inspection-guide-grid p, .example-details > p { margin-top: .6rem; color: var(--muted); }
+.inspection-guide-grid p { margin-top: .6rem; color: var(--muted); }
 .inspection-guide-grid .text-link { display: inline-block; margin-top: .7rem; }
 
 .inspection-example { background: var(--stone); }
 .inspection-example h2 { margin-bottom: 1.4rem; }
-.example-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(1.3rem, 4.5vw, 4rem); align-items: start; }
-.example-grid figure { margin: 0; }
-.example-grid figure img { width: 100%; height: auto; }
-.example-grid figcaption { margin-top: .45rem; font-size: .875rem; color: var(--muted); }
-.example-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; }
-.example-gallery img { aspect-ratio: 3 / 2; object-fit: cover; }
-.example-gallery img:first-child { grid-column: 1 / -1; }
-.machine-facts { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: .8rem; padding-block: .75rem; margin-top: .95rem; border-block: 1px solid var(--line); }
+.example-grid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); gap: clamp(1.3rem, 4.5vw, 4rem); align-items: start; }
+.example-gallery { margin: 0; }
+.example-gallery img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--paper); }
+.example-thumbnails { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .55rem; list-style: none; padding: 0; margin-top: .65rem; }
+.example-thumbnails a { display: block; padding: 2px; border: 2px solid transparent; }
+.example-thumbnails a:hover, .example-thumbnails a[aria-current] { border-color: var(--ochre); }
+.example-heading { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem .85rem; }
+.example-label { border: 1px solid #a88c51; padding: .15rem .55rem; color: var(--ochre); font-size: .875rem; font-weight: 700; }
+.machine-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem 1rem; padding-block: .85rem; margin-top: 1rem; border-block: 1px solid var(--line); }
 .machine-facts dt, .condition-list dt { font-weight: 700; }
+.machine-facts dt { color: var(--muted); font-size: .875rem; }
 .condition-list { margin-top: .75rem; }
 .condition-list > div { padding-block: .45rem; }
-.example-details .button { margin-top: 1rem; }
+.example-disclosure { margin-top: .95rem; color: var(--muted); font-size: .875rem; }
+.example-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1.1rem; margin-top: 1rem; }
 
 @media (prefers-reduced-motion: no-preference) {
   .coverage-dashboard { animation: coverage-entrance 360ms ease-out both; }

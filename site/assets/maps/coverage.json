@@ -53,10 +53,5 @@
     "TR": ["Turkey", "Türkiye"],
     "US": ["US", "USA", "United States of America"],
     "AE": ["UAE", "U.A.E.", "Emirates"]
-  },
-  "example": {
-    "partnerName": "MEVAS",
-    "reportUrl": "https://mevas.net/machinery-inspection-report-checklist/sample-reports-for-heavy-equipment-inspection",
-    "media": []
   }
 }
