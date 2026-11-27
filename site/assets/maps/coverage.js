@@ -9,7 +9,7 @@ const countFormat = new Intl.NumberFormat(lang);
 
 const copy = {
   en: {
-    partner: 'Partner inspections',
+    partner: 'Inspection location',
     buyer: 'Buyer market and delivery enquiries',
     direct: 'Iron Bridge inspections',
     featured: 'Buying for Thailand? Tell us what machine you need. We can help source it, arrange an inspection where the machine is located and coordinate shipping.',
@@ -27,7 +27,7 @@ const copy = {
     close: 'Close nearby locations'
   },
   th: {
-    partner: 'พื้นที่ตรวจสภาพผ่านพันธมิตร',
+    partner: 'พื้นที่ตรวจสภาพ',
     buyer: 'ตลาดผู้ซื้อและพื้นที่รับจัดส่ง',
     direct: 'ตรวจสภาพโดย Iron Bridge',
     featured: 'ต้องการซื้อเครื่องจักรเพื่อใช้ในประเทศไทย? แจ้งประเภทเครื่องจักรที่ต้องการ เราช่วยจัดหา ประสานการตรวจสภาพ ณ ที่ตั้งของเครื่อง และจัดการขนส่งได้',
